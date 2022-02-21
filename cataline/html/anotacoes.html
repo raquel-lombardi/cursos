@@ -1,0 +1,278 @@
+<!-- /**/Tipografia é todo processo que envolve a impressão dos tipos, sendo tipo de fonte ou letra.
+
+Abaixo veremos as principais tags para formatação de texto.
+
+Tags de títulos
+As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Para fins de otimização SEO é importante entender como funcionam, e fazer uma utilização adequada, por exemplo, 
+é recomendado que tenhamos apenas um h1 por página, considerando que ele representa o título principal e é disso que se trata nossa página. -->
+
+<h1>Hello World</h1> <!-- Título de maior valor hierárquico -->
+<h2>Hello World</h2>
+<h3>Hello World</h3>
+<h4>Hello World</h4>
+<h5>Hello World</h5>
+<h6>Hello World</h6> <!--Título de menor valor hierárquico -->
+
+<!-- Paragrafo -->
+
+<p>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto qui quis
+  deserunt corrupti minus reiciendis soluta voluptatibus dicta repellendus totam
+  nisi ad, praesentium eos sit, illo sint id fugit eveniet.
+</p>
+
+<!-- Negrito -->
+
+<b>Este é um texto em negrito</b>
+
+<!-- Quebra de linha
+Já que não iremos inserir quaisquer conteúdo dentro desta tag, ela não necessita de fechamento. -->
+
+<br />
+
+
+<!-- Texto pequeno -->
+
+<small>Este é um texto menor</small>
+
+<!-- Marcação -->
+<p>Não esqueça de comprar o <mark>pão</mark> hoje</p>
+
+<!-- Itálico -->
+<i>Transforma o conteúdo em itálico</i>
+
+<!-- Isolamento -->
+<!-- A tag <span> não nos oferece nenhum tipo de estilização por padrão ou peso semântico, o uso mais comum dela é quando queremos isolar uma parte especifica do texto para fazer alguma estilização adicional. -->
+
+<h1>Sua carreira de sucesso <span>começa aqui e agora!</span></h1>
+
+<!-- Hiperlink -->
+<a href="http://google.com">ir para a página do google</a>
+
+<!-- Hiperlink com abertura em nova pagina -->
+<a href="http://google.com" target="_blank">ir para a página do google</a>
+
+<!-- Hiperlink para outros arquvivos -->
+<h1> Home </h1>
+<a href="contatos.html">ir para a página de contatos</a>
+
+<!-- na pagina de contatos -->
+<h1> Contatos </h1>
+<a href="home.html"> Voltar para a home</a>
+
+<!-- quando o arquivo está em subpastas -->
+<a href="./sub-pasta/home.html"> Voltar para a home</a>
+
+<!-- para sair da sub pasta -->
+<a href="../home.html"> Voltar para a home</a>
+
+<!-- adicionar imagem src (serve para incorporar um recurso da ) -->
+<img src="./files/imagem.jpg">
+
+<!-- para alterar o tamanho da imagem -->
+<img src="./files/imagem.jpg" width="300px" height="300px">
+
+<!-- descrição da imagem -->
+<img src="./files/imagem.jpg" alt="cachorro">
+
+<!-- Adicionar audio -->
+<audio controls>
+  <source src="./files/audio.mp3" type="audio/mpeg"/>
+</audio>
+
+<!-- Adicionar video -->
+<video controls>
+  <source src="./files/video.mp4" type="video/mp4"/>
+</video>
+
+<!-- Adicionar video com controle do tamanho-->
+<video controls width="300px" height="300px">
+  <source src="./files/video.mp4" type="video/mp4"/>
+</video>
+
+<!-- Lista desordenada -->
+<!-- para criar a lista -->
+<ul> </ul>
+
+<!-- para criar o item na lista -->
+<li></li>
+
+<!-- exemplos -->
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item3</li>
+</ul>
+
+<ul>
+  <li>
+    <a href="http://google.com.br">Abrir site do Google</a>
+  </li>
+  <li>
+    <a href="http://uol.com.br"> Abrir site da uol</a>
+  </li>
+  <li>
+    <a href="http://yahoo.com.br"> Abrir site do Yahoo</a>
+  </li>
+</ul>
+
+<!-- Criar formulários com botão-->
+<!-- sempre devemos colocar o tipo -->
+<!-- para os botões o tipo quando selecionado vem como padrão submit, que significa que ira 
+submeter o formulário -->
+<!-- placeholder coloca informação dentro do formulário para identificação -->
+<p>Formulário de login</p>
+<form>
+  <input type="email" placeholder="Digite seu e-mail">
+  <input type="passaword" placeholder="Digite sua senha">
+  <button type="submit">Login</button>
+</form>
+
+<!-- Exercicios formulário simples-->
+<p>Formulário de contato simples</p>
+<form>
+  <input type="text" placeholder="Nome" requerid/><br/>
+  <input type="text" placeholder="Gênero" requerid/><br/>
+  <input type="text" placeholder="Assunto" requerid/><br/>
+  <textarea placeholder="Mensagem" rows="5" requerid></textarea><br/>
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- Exercicios formulário complexo-->
+<!-- a opção radio, acrescenta um radio button -->
+<!-- opção name="genero" não deixa que mais de um botão com mesmo nome seja selecionado -->
+<!-- input type="file" para acrescentar arquivos -->
+<p>Formulário de contato Complexo</p>
+<form>
+  <input type="text" placeholder="Nome" requerid/><br/>
+  <input type="radio" name="genero"/> masculino <br/>
+  <input type="radio" name="genero"/> feminino <br/>
+  <select>
+    <option>Sugestão</option>
+    <option>Reclamação</option>
+    <option>Suporte</option>
+  </select>
+  <br/>
+  <textarea placeholder="Mensagem" rows="5" requerid></textarea><br/>
+  <input type="file"/><br>
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- SEMANTICA -->
+<header>
+  <h1>Cabeçalho</h1>
+</header>
+<main>
+  <p> Sobre mim</p>
+  <p>Habilidade</p>
+  <p>Contato</p>
+</main>
+<footer>
+  <h2>Rodapé</h2>
+</footer>
+
+<!-- Dividor seções - section -->
+<header>
+  <h1>Cabeçalho</h1>
+</header>
+<main>
+  <section>
+    <p> Sobre mim</p>
+  </section>
+  
+  <section>
+    <p>Habilidade</p>
+  </section>
+
+  <section>
+    <p>Contato</p>
+  </section>
+</main>
+<footer>
+  <h2>Rodapé</h2>
+</footer>
+
+<!-- Isolar HTML div -->
+<header>
+  <h1>Cabeçalho</h1>
+</header>
+<main>
+  <div>
+    <p> Sobre mim</p>
+  </div>
+  
+  <div>
+    <p>Habilidade</p>
+  </div>
+
+  <div>
+    <p>Contato</p>
+  </div>
+</main>
+<footer>
+  <h2>Rodapé</h2>
+</footer>
+
+<!-- Tag nav para navegação -->
+<nav>
+  <ul>
+    <li>
+      <a href="Home"></a>    
+    </li>
+    <li>
+      <a href="Sobre"></a>
+    </li>
+    <li>
+      <a href="Contato"></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- META TAGS -->
+
+<!-- Alterar nome na aba da pagina -->
+<title>Nome da pagina na aba</title>
+
+<!-- altera o icone do lado do nome na aba -->
+<link rel="icon" href="nomedoarquivoaqui.png ou da internet"> 
+
+<!-- boa pratica sempre usar para evitar erros de acentuação e caracteres especial -->
+<meta charset="UTF-8"> 
+
+<!-- Abrir em todos dispositivos com tamanho ok -->
+<meta name="viewport" content="width=device-width, initial-scale1">
+
+
+<!-- declarar versão do HTML usado -->
+<!DOCTYPE html>
+
+<!-- head para colocas todas as meta tags -->
+<head>
+  <title>Nome da pagina na aba</title>
+  <link rel="icon" href="nomedoarquivoaqui.png ou da internet"> 
+</head>
+
+<!-- body para colocar todo corpo da pagina exibida para usuário -->
+<body>
+  <main>
+    <p> Sobre mim</p>
+    <p>Habilidade</p>
+    <p>Contato</p>
+  </main>  
+</body>
+
+<!-- html para juntar o head e body -->
+<html>
+  <head>
+    <title>Nome da pagina na aba</title>
+    <link rel="icon" href="nomedoarquivoaqui.png ou da internet"> 
+  </head>
+  <body>
+    <main>
+      <p> Sobre mim</p>
+      <p>Habilidade</p>
+      <p>Contato</p>
+    </main>  
+  </body>
+</html>
+

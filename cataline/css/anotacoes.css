@@ -1,0 +1,239 @@
+<!-- adicionando cor e alterando tamanho com style no meta tags -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            h1{
+                color: blueviolet;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Word</h1>
+    </body>
+
+</html>
+
+<!-- fazer alteração de background -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background: cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Word</h1>
+    </body>
+</html>
+
+<!-- Hierarquias -->
+<!-- Deve ser usado a tag abaixo apenas em casos extremos -->
+!importante 
+
+<!-- tipos de alteração de fontes -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            h1{
+                font-family: sans-serif;
+                font-style: italic;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Word</h1>
+    </body>
+</html>
+
+<!-- para definir qual a fonte será usada 
+foi baixada a fonte pokemon e colocada na pasta -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            @font-face {
+                font-family: Pokemon;
+                src: url('./pokemon.tff');
+            }
+            h1{
+                font-family: Pokemon;
+                font-style: italic;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Word</h1>
+    </body>
+</html>
+
+<!-- estilização de textos -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            p{
+                text-align: right;
+                text-transform: uppercase;
+                text-decoration: overline;
+                line-height: 10px;
+                word-spacing: 10px;
+                letter-spacing: 2px;
+            }
+
+               
+        </style>
+    </head>
+    <body>
+        <p>sadfjklsdfjklsdjflksdjfklsjdfklsdjfklsjdfklsjdflksjdfkljsdklfjslkdjf</p>
+    </body>
+</html>
+
+<!-- bordas -->
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Introdução ao CSS</title>
+            <style>
+                div{
+                    width: 200px;
+                    height: 200px;
+                    background: red;
+
+                    /*borda verbosa */
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: black;
+
+                    /*borda simples */
+                    border:  5px solid #000;
+
+                    /* arredondamento - verboso */
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+
+                    /*arredondamento - simples */
+                    border-radius: 10px 10px 10px 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <div>
+
+            </div>
+        </body>
+</html>
+
+<!-- espaçamento interno e externo -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            div{
+                width: 300px;
+                background: green;
+                margin: 0 0 10px 10px;
+
+            }
+        </style>
+        </head>
+        <body>
+            <div>
+                Um cidadão fez voto de desapego e pobreza. Dispôs de todos os seus bens e propriedades, reservou para si apenas duas tangas, e saiu pelo mundo afora em busca de todos os sábios, medindo na verdade o desapego de cada um. Levava apenas uma tanga no corpo
+
+            </div>
+                        
+            <div>
+                Um cidadão fez voto de desapego e pobreza. Dispôs de todos os seus bens e propriedades, reservou para si apenas duas tangas, e saiu pelo mundo afora em busca de todos os sábios, medindo na verdade o desapego de cada um. Levava apenas uma tanga no corpo
+
+            </div>
+        </body>
+</html>
+
+<!-- tipos de exibição -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            /* inline - exibe um elemento como um elemento embutido.
+            Quaisquer propriedades de altura e largura não terão efeito */
+
+            /* block - Exibe um elemento como um elemento de bloco.
+            Começa em uma nova linha e ocupa toda a largura */
+
+            /* inline-block - Exibe um elemento como um contêiner de bloco de nível de linha. O próprio elemento é formatado com um elemento embutido, mas você pode aplicar valores de altura e largura */
+
+            /* none - O elemento é completamente removido */
+            h1{
+                display: inline;
+            }            
+        </style>
+        </head>
+        <body>
+            <h1>HTML</h1>
+            <h1>CSS</h1>
+        </body>
+</html>
+
+<!-- tipos de exibição  com span-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução CSS</title>
+        <style>
+            /* inline - exibe um elemento como um elemento embutido.
+            Quaisquer propriedades de altura e largura não terão efeito */
+
+            /* block - Exibe um elemento como um elemento de bloco.
+            Começa em uma nova linha e ocupa toda a largura */
+
+            /* inline-block - Exibe um elemento como um contêiner de bloco de nível de linha. O próprio elemento é formatado com um elemento embutido, mas você pode aplicar valores de altura e largura */
+
+            /* none - O elemento é completamente removido */
+            span{
+                display: inline;
+            }            
+        </style>
+        </head>
+        <body>
+            <span>HTML</span>
+            <span>CSS</span>
+        </body>
