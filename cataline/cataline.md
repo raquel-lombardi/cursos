@@ -1,4 +1,4 @@
-## Curso Cataline
+## Curso Cataline - em andamento
 
 Site: https://www.cataline.io/basecamp
 
